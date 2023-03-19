@@ -11,6 +11,7 @@ Las entidades seran:
 
 - Usuario.
 - Proveedor.
+- Categoria.
 - Producto.
 - Compra.
 - Pais.
@@ -30,6 +31,13 @@ Un proveedor cuenta con los siguientes atributos:
 - Id.
 - Nombre.
 
+### Categoria
+
+Una categoria cuenta con los siguientes atributos:
+
+- Id.
+- Nombre.
+
 ### Producto
 
 Un producto cuenta con los siguientes atributos:
@@ -38,6 +46,7 @@ Un producto cuenta con los siguientes atributos:
 - Nombre.
 - Precio.
 - Categoria.
+
 
 ### Compra
 
@@ -80,6 +89,14 @@ La cardinalidad es 1:M, en donde un producto es proveido por un proveedor, y un 
 Habiendo dicho esto, el modelo relacional de la entidad Producto sera el siguiente:
 
 Producto(Id, Nombre, Precio, Categoria, Id_Proveedor)
+
+### Un producto pertenece a una categoria - una categoria es usada por muchos productos
+
+La cardinalidad es M:1, en donde un producto tiene una solo categoria, pero una categoria la pueden tener muchos productos. La llave forranea ira a la entidad en donde la relacion sea M, en este caso, esta entidad es un producto.
+
+Habiendo dicho esto, el modelo relacional de la entidad Producto sera el siguiente:
+
+Producto(Id, Nombre, Precio, Categoria, Id_Categoria)
 
 ### Una compra tiene muchos producto - Un producto pertence a muchas compras
 

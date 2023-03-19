@@ -16,32 +16,40 @@ namespace Models {
             new Proveedor{ Id = 5, Nombre = "Sony" },
         };
 
+        // Registros de categorias.
+        static List<Categoria> Categorias = new List<Id_Categoria>{
+            new Categoria{ Id = 1, Nombre = "Accesorios" },
+            new Categoria{ Id = 2, Nombre = "Ropa" },
+            new Categoria{ Id = 3, Nombre = "Calzado" },
+            new Categoria{ Id = 4, Nombre = "Tecnologia" },
+        };
+
         // Registros de productos.
         static List<Producto> Productos = new List<Producto>{
             // Productos Gucci.
-            new Producto{Id = 1, Nombre = "Cartera Piel de Leon Gucci", Precio = 150, Categoria = "Accesorios", Id_Proveedor = 1 },
-            new Producto{Id = 2, Nombre = "Camiseta blanca Gucci", Precio = 50, Categoria = "Ropa", Id_Proveedor = 1 },
+            new Producto{Id = 1, Nombre = "Cartera Piel de Leon Gucci", Precio = 150, Id_Categoria = 1, Id_Proveedor = 1 },
+            new Producto{Id = 2, Nombre = "Camiseta blanca Gucci", Precio = 50, Id_Categoria = 2, Id_Proveedor = 1 },
 
             // Productos Adidas.
-            new Producto{Id = 3, Nombre = "Zapatillas deportivas Adidas", Precio = 80, Categoria = "Calzado", Id_Proveedor = 2 },
-            new Producto{Id = 4, Nombre = "Botines azules", Precio = 55, Categoria = "Calzado", Id_Proveedor = 2 },
+            new Producto{Id = 3, Nombre = "Zapatillas deportivas Adidas", Precio = 80, Id_Categoria = 3, Id_Proveedor = 2 },
+            new Producto{Id = 4, Nombre = "Botines azules", Precio = 55, Id_Categoria = 3, Id_Proveedor = 2 },
 
             // Productos Nike.
-            new Producto{Id = 5, Nombre = "Zapatos deportivos negros", Precio = 88, Categoria = "Calzado", Id_Proveedor = 3 },
-            new Producto{Id = 6, Nombre = "Cancetines", Precio = 20, Categoria = "Ropa", Id_Proveedor = 3 },
+            new Producto{Id = 5, Nombre = "Zapatos deportivos negros", Precio = 88, Id_Categoria = 3, Id_Proveedor = 3 },
+            new Producto{Id = 6, Nombre = "Cancetines", Precio = 20, Id_Categoria = "Ropa", Id_Proveedor = 3 },
 
             // Productos Apple.
-            new Producto{Id = 7, Nombre = "IPhone 13", Precio = 1233, Categoria = "Tecnologia", Id_Proveedor = 4 },
-            new Producto{Id = 8, Nombre = "MacBook Pro M1", Precio = 2200, Categoria = "Tecnologia", Id_Proveedor = 4 },
-            new Producto{Id = 9, Nombre = "MacBook Pro M2", Precio = 2500, Categoria = "Tecnologia", Id_Proveedor = 4 },
-            new Producto{Id = 10, Nombre = "Teclado Apple", Precio = 250, Categoria = "Tecnologia", Id_Proveedor = 4 },
-            new Producto{Id = 11, Nombre = "AirPods", Precio = 210, Categoria = "Tecnologia", Id_Proveedor = 4 },
+            new Producto{Id = 7, Nombre = "IPhone 13", Precio = 1233, Id_Categoria = 4, Id_Proveedor = 4 },
+            new Producto{Id = 8, Nombre = "MacBook Pro M1", Precio = 2200, Id_Categoria = 4, Id_Proveedor = 4 },
+            new Producto{Id = 9, Nombre = "MacBook Pro M2", Precio = 2500, Id_Categoria = 4, Id_Proveedor = 4 },
+            new Producto{Id = 10, Nombre = "Teclado Apple", Precio = 250, Id_Categoria = 4, Id_Proveedor = 4 },
+            new Producto{Id = 11, Nombre = "AirPods", Precio = 210, Id_Categoria = 4, Id_Proveedor = 4 },
 
             // Productos de Sony.
-            new Producto{Id = 12, Nombre = "PlayStation 5", Precio = 440, Categoria = "Tecnologia", Id_Proveedor = 5 },
-            new Producto{Id = 13, Nombre = "PlayStation 4", Precio = 340, Categoria = "Tecnologia", Id_Proveedor = 5 },
-            new Producto{Id = 14, Nombre = "Control inalambrico PlayStation 5", Precio = 70, Categoria = "Tecnologia", Id_Proveedor = 5 },
-            new Producto{Id = 15, Nombre = "Control inalambrico PlayStation 4", Precio = 55, Categoria = "Tecnologia", Id_Proveedor = 5 },
+            new Producto{Id = 12, Nombre = "PlayStation 5", Precio = 440, Id_Categoria = 4, Id_Proveedor = 5 },
+            new Producto{Id = 13, Nombre = "PlayStation 4", Precio = 340, Id_Categoria = 4, Id_Proveedor = 5 },
+            new Producto{Id = 14, Nombre = "Control inalambrico PlayStation 5", Precio = 70, Id_Categoria = 4, Id_Proveedor = 5 },
+            new Producto{Id = 15, Nombre = "Control inalambrico PlayStation 4", Precio = 55, Id_Categoria = 4, Id_Proveedor = 5 },
         }
 
         // Registros de usuarios.
