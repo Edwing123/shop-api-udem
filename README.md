@@ -98,7 +98,7 @@ Habiendo dicho esto, el modelo relacional de la entidad Producto sera el siguien
 
 Producto(Id, Nombre, Precio, Categoria, Id_Categoria)
 
-### Una compra tiene muchos producto - Un producto pertence a muchas compras
+### Una compra tiene muchos producto - un producto pertence a muchas compras
 
 La cardinalidad es M:N, en donde una compra esta compuesta de muchos productos, y un producto puede pertenecer a muchas compras. Al ser una relacion muchos-a-muchos, se tendra que crear una tabla extra, dentro de esa table se hara la referencia de las llaves primarias de las entidades que componen esta relacion, en este caso, estas en serian Producto y Compra.
 
