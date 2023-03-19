@@ -50,7 +50,7 @@ namespace Models {
             new Producto{Id = 13, Nombre = "PlayStation 4", Precio = 340, Id_Categoria = 4, Id_Proveedor = 5 },
             new Producto{Id = 14, Nombre = "Control inalambrico PlayStation 5", Precio = 70, Id_Categoria = 4, Id_Proveedor = 5 },
             new Producto{Id = 15, Nombre = "Control inalambrico PlayStation 4", Precio = 55, Id_Categoria = 4, Id_Proveedor = 5 },
-        }
+        };
 
         // Registros de usuarios.
         static List<Usuario> Usuarios = new List<Usuario>{
@@ -64,7 +64,7 @@ namespace Models {
             // Usuarios de Panama.
             new Usuario{ Id = 4, Nombres = "Javier", Apellidos = "Garcia Urbina", Id_Pais = 3 },
             new Usuario{ Id = 5, Nombres = "Ivania", Apellidos = "Garcia Urbina", Id_Pais = 3 },
-        }
+        };
 
         // Registros de compras.
         static List<Compra> Usuarios = new List<Compra>{
@@ -91,52 +91,52 @@ namespace Models {
 
             // Ccompra #8.
             new Compra{ Id = 8,  Fecha = new DateTime("2021-01-28"), Id_Usuario = 5  },
-        }
+        };
+
+        // Registros de los productos que pertencen a cada compra.
+        static List<ProductoComprado> ProductosComprados = new List<ProductoComprado>{
+            // Productos de la compra #1.
+            new ProductoComprado{ Id = 1, Cantidad = 2, Id_Producto = 4, Id_Compra = 1 },
+            new ProductoComprado{ Id = 2, Cantidad = 1, Id_Producto = 12, Id_Compra = 1 },
+            new ProductoComprado{ Id = 3, Cantidad = 2, Id_Producto = 11, Id_Compra = 1 },
+
+            // Productos de la compra #2.
+            new ProductoComprado{ Id = 4, Cantidad = 8, Id_Producto = 6, Id_Compra = 2 },
+            new ProductoComprado{ Id = 5, Cantidad = 4, Id_Producto = 7, Id_Compra = 2 },
+            new ProductoComprado{ Id = 6, Cantidad = 1, Id_Producto = 10, Id_Compra = 2 },
+            new ProductoComprado{ Id = 7, Cantidad = 2, Id_Producto = 9, Id_Compra = 2 },
+
+            // Productos de la compra #3.
+            new ProductoComprado{ Id = 8, Cantidad = 1, Id_Producto = 14, Id_Compra = 3 },
+            new ProductoComprado{ Id = 9, Cantidad = 2, Id_Producto = 1, Id_Compra = 3 },
+
+            // Productos de la compra #4.
+            new ProductoComprado{ Id = 10, Cantidad = 1, Id_Producto = 8, Id_Compra = 4 },
+            new ProductoComprado{ Id = 11, Cantidad = 1, Id_Producto = 11, Id_Compra = 4 },
+            new ProductoComprado{ Id = 12, Cantidad = 1, Id_Producto = 10, Id_Compra = 4 },
+            new ProductoComprado{ Id = 13, Cantidad = 2, Id_Producto = 5, Id_Compra = 4 },
+
+            // Productos de la compra #5.
+            new ProductoComprado{ Id = 14, Cantidad = 1, Id_Producto = 13, Id_Compra = 5 },
+            new ProductoComprado{ Id = 15, Cantidad = 2, Id_Producto = 15, Id_Compra = 5 },
+            new ProductoComprado{ Id = 16, Cantidad = 4, Id_Producto = 6, Id_Compra = 5 },
+
+            // Productos de la compra #6.
+            new ProductoComprado{ Id = 17, Cantidad = 1, Id_Producto = 9, Id_Compra = 6 },
+            new ProductoComprado{ Id = 18, Cantidad = 2, Id_Producto = 2, Id_Compra = 6 },
+            new ProductoComprado{ Id = 19, Cantidad = 3, Id_Producto = 3, Id_Compra = 6 },
+
+            // Productos de la compra #7.
+            new ProductoComprado{ Id = 20, Cantidad = 1, Id_Producto = 13, Id_Compra = 7 },
+            new ProductoComprado{ Id = 21, Cantidad = 4, Id_Producto = 15, Id_Compra = 7 },
+            new ProductoComprado{ Id = 22, Cantidad = 1, Id_Producto = 11, Id_Compra = 7 },
+            new ProductoComprado{ Id = 23, Cantidad = 1, Id_Producto = 7, Id_Compra = 7 },
+            new ProductoComprado{ Id = 24, Cantidad = 12, Id_Producto = 4, Id_Compra = 7 },
+
+            // Productos de la compra #8.
+            new ProductoComprado{ Id = 25, Cantidad = 4, Id_Producto = 3, Id_Compra = 8 },
+            new ProductoComprado{ Id = 26, Cantidad = 6, Id_Producto = 5, Id_Compra = 8 },
+            new ProductoComprado{ Id = 27, Cantidad = 20, Id_Producto = 6, Id_Compra = 8 },
+        };
     }
-
-    // Registros de los productos que pertencen a cada compra.
-    static List<ProductoComprado> ProductosComprados = List<ProductoComprado>{
-        // Productos de la compra #1.
-        new ProductoComprado{ Id = 1, Cantidad = 2, Id_Producto = 4, Id_Compra = 1 },
-        new ProductoComprado{ Id = 2, Cantidad = 1, Id_Producto = 12, Id_Compra = 1 },
-        new ProductoComprado{ Id = 3, Cantidad = 2, Id_Producto = 11, Id_Compra = 1 },
-
-        // Productos de la compra #2.
-        new ProductoComprado{ Id = 4, Cantidad = 8, Id_Producto = 6, Id_Compra = 2 },
-        new ProductoComprado{ Id = 5, Cantidad = 4, Id_Producto = 7, Id_Compra = 2 },
-        new ProductoComprado{ Id = 6, Cantidad = 1, Id_Producto = 10, Id_Compra = 2 },
-        new ProductoComprado{ Id = 7, Cantidad = 2, Id_Producto = 9, Id_Compra = 2 },
-
-        // Productos de la compra #3.
-        new ProductoComprado{ Id = 8, Cantidad = 1, Id_Producto = 14, Id_Compra = 3 },
-        new ProductoComprado{ Id = 9, Cantidad = 2, Id_Producto = 1, Id_Compra = 3 },
-
-        // Productos de la compra #4.
-        new ProductoComprado{ Id = 10, Cantidad = 1, Id_Producto = 8, Id_Compra = 4 },
-        new ProductoComprado{ Id = 11, Cantidad = 1, Id_Producto = 11, Id_Compra = 4 },
-        new ProductoComprado{ Id = 12, Cantidad = 1, Id_Producto = 10, Id_Compra = 4 },
-        new ProductoComprado{ Id = 13, Cantidad = 2, Id_Producto = 5, Id_Compra = 4 },
-
-        // Productos de la compra #5.
-        new ProductoComprado{ Id = 14, Cantidad = 1, Id_Producto = 13, Id_Compra = 5 },
-        new ProductoComprado{ Id = 15, Cantidad = 2, Id_Producto = 15, Id_Compra = 5 },
-        new ProductoComprado{ Id = 16, Cantidad = 4, Id_Producto = 6, Id_Compra = 5 },
-
-        // Productos de la compra #6.
-        new ProductoComprado{ Id = 17, Cantidad = 1, Id_Producto = 9, Id_Compra = 6 },
-        new ProductoComprado{ Id = 18, Cantidad = 2, Id_Producto = 2, Id_Compra = 6 },
-        new ProductoComprado{ Id = 19, Cantidad = 3, Id_Producto = 3, Id_Compra = 6 },
-
-        // Productos de la compra #7.
-        new ProductoComprado{ Id = 20, Cantidad = 1, Id_Producto = 13, Id_Compra = 7 },
-        new ProductoComprado{ Id = 21, Cantidad = 4, Id_Producto = 15, Id_Compra = 7 },
-        new ProductoComprado{ Id = 22, Cantidad = 1, Id_Producto = 11, Id_Compra = 7 },
-        new ProductoComprado{ Id = 23, Cantidad = 1, Id_Producto = 7, Id_Compra = 7 },
-        new ProductoComprado{ Id = 24, Cantidad = 12, Id_Producto = 4, Id_Compra = 7 },
-
-        // Productos de la compra #8.
-        new ProductoComprado{ Id = 25, Cantidad = 4, Id_Producto = 3, Id_Compra = 8 },
-        new ProductoComprado{ Id = 26, Cantidad = 6, Id_Producto = 5, Id_Compra = 8 },
-        new ProductoComprado{ Id = 27, Cantidad = 20, Id_Producto = 6, Id_Compra = 8 },
-    };
 }
